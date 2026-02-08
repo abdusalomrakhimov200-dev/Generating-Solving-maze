@@ -1,0 +1,42 @@
+body {
+margin: 0;
+height: 100vh;
+background: #0b0e17;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: system-ui, sans-serif;
+color: #fff;
+}
+.maze {
+display: grid;
+grid-template-columns: repeat(20, 22px);
+gap: 2px;
+}
+.cell {
+width: 22px;
+height: 22px;
+background: #1a1f35;
+}
+.wall {
+background: #050814;
+}
+.start {
+background: #00e5ff;
+}
+.end {
+background: #ff4d6d;
+}
+.visited {
+background: #2f3a7a;
+}
+.path {
+background: #7aa2ff;
+}
+.label {
+position: fixed;
+bottom: 20px;
+font-size: 14px;
+opacity: 0.8;
+letter-spacing: 1px;
+}
